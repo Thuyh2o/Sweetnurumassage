@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Paradise Massage</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            flex-wrap: nowrap;
+        }
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        .title span {
+            display: inline-block;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .sweet { color: red; }
+        .paradise { color: gold; }
+        .massage { color: white; }
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: transparent;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+        .menu a {
+            color: gold;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .menu a:hover {
+            background-color: red;
+            color: black;
+        }
+        .banner-slider {
+            width: 100%;
+            max-width: 100vw;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+        .banner-slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .banner-slider img.active {
+            opacity: 1;
+            z-index: 1;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        h2 {
+            color: gold;
+            text-shadow: 0px 0px 10px gold;
+        }
+        .services-gallery, .staff-gallery, .reviews-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .services-gallery img, .staff-gallery img {
+            width: 360px;
+            height: 410px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .review-card {
+            width: 180px;
+            text-align: center;
+        }
+        .review-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .review-card span {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+            color: gold;
+        }
+        .review-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .chat-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .chat-buttons a img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <div class="logo">
+                <img src="img/Logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <span class="sweet">Sweet</span>
+                <span class="paradise">Paradise</span>
+                <span class="massage">Nuru Massage</span>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#home">Trang chủ</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#staff">Ảnh kỹ thuật viên</a>
+            <a href="#reviews">Đánh giá nhân viên</a>
+            <a href="#contact">Liên hệ Booking</a>
+        </div>
+    </div>
+
+    <div class="banner-slider">
+        <img src="img/Banner 1.png" class="slide active" alt="Banner 1">
+        <img src="img/Banner 2.png" class="slide" alt="Banner 2">
+        <img src="img/banner 3.png" class="slide" alt="Banner 3">
+    </div>
+
+    <div id="services" class="content">
+        <h2>Dịch Vụ</h2>
+        <div class="services-gallery">
+            <img src="img/Vé gold.png" alt="Service 1">
+            <img src="img/Vé VIP.png" alt="Service 2">
+            <img src="img/Vé King.png" alt="Service 3">
+            <img src="img/Vé Sup.png" alt="Service 4">
+        </div>
+    </div>
+
+    <div id="staff" class="content">
+        <h2>Ảnh Kỹ Thuật Viên</h2>
+        <div class="staff-gallery">
+            <img src="ảnh nv/ánh.jpg" alt="Ánh">
+            <img src="ảnh nv/bi.jpg" alt="Bi">
+            <img src="ảnh nv/Bống 2.jpg" alt="Bống">
+            <img src="ảnh nv/miu.jpg" alt="miu">
+            <img src="ảnh nv/Nấm.jpg" alt="nấm">
+            <img src="ảnh nv/Sâu.jpg" alt="sâu">
+            <img src="ảnh nv/sóc2.jpg" alt="soc">
+            <img src="ảnh nv/tuyết.jpg" alt="nhim">
+            <img src="ảnh nv/kem.jpg" alt="kem">
+            <img src="ảnh nv/thư.jpg" alt="thư">
+            <img src="ảnh nv/Chăm.jpg" alt="chăm">
+            <img src="ảnh nv/TV.jpg" alt="Lan">
+            <img src="ảnh nv/Lan.jpg" alt="Lan">
+        </div>
+    </div>
+
+    <div id="reviews" class="content">
+        <h2>Đánh Giá Nhân Viên</h2>
+        <div class="reviews-gallery">
+            <div class="review-card">
+                <a href="review_anh.html">
+                    <img src="ảnh nv/ánh.jpg" alt="Ánh">
+                    <span>Ánh</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="reciew_bi.html">
+                    <img src="ảnh nv/bi.jpg" alt="Bi">
+                    <span>Bi</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_bong.html">
+                    <img src="ảnh nv/Bống 2.jpg" alt="Bống">
+                    <span>Bống</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_chăm.html">
+                    <img src="ảnh nv/Chăm.jpg" alt="Chăm">
+                    <span>Chăm</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_kem.html">
+                    <img src="ảnh nv/kem.jpg" alt="kem">
+                    <span>Kem</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_lan.html">
+                    <img src="ảnh nv/Lan.jpg" alt="Lan">
+                    <span>Lan</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_miu.html">
+                    <img src="ảnh nv/miu.jpg" alt="miu">
+                    <span>miu</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_nấm.html">
+                    <img src="ảnh nv/Nấm.jpg" alt="Nấm">
+                    <span>Nấm</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_sâu.html">
+                    <img src="ảnh nv/Sâu.jpg" alt="sâu">
+                    <span>Sâu</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_sóc.html">
+                    <img src="ảnh nv/sóc2.jpg" alt="sóc">
+                    <span>Sóc</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_thư.html">
+                    <img src="ảnh nv/thư.jpg" alt="Thư">
+                    <span>thư</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="review_TV.html">
+                    <img src="ảnh nv/TV.jpg" alt="TV">
+                    <span>TV</span>
+                </a>
+            </div>
+            <div class="review-card">
+                <a href="reciew_nhím.html">
+                    <img src="ảnh nv/tuyết.jpg" alt="nhím">
+                    <span>Nhím</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="content contact">
+        <h2>Liên Hệ Booking</h2>
+        <p>Đặt chỗ qua Zalo: <b>0936903069-0936999812</b></p>
+        <p>Hoặc liên hệ quản lý: <b>0936532896-0359315751</b></p>
+    </div>
+
+    <div class="chat-buttons">
+        <a href="https://www.facebook.com/profile.php?id=61554805107384" target="_blank"><img src="img/lg mes.png" alt="Chat Messenger"></a>
+        <a href="https://zalo.me/0936903069" target="_blank"><img src="img/lg zalo.png" alt="Chat Zalo"></a>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.banner-slider .slide');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 4000);
+    </script>
+</body>
+</html>
